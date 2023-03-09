@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+    /* flex-direction: column; */
+    box-shadow: 15px 15px 200px rgb(236,234,234);
+    border-radius: 7%;
+}
+
+.left {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    border-radius: 7.2%;
+}
+
+.left h3 {
+    color: #d3c8ff;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.dot {
+    background-image: linear-gradient(rgb(77, 34, 201), rgb(71, 52, 238));
+    height: 155px;
+    width: 155px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.score {
+    margin-bottom: 7px;
+}
+
+.dot h1 {
+    font-size: 55px;
+    font-weight: 800;
+    margin-top: 0.6em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.dot p {
+    color: #d3c8ff;
+    margin-top: 0;
+    text-align: center;
+}
+
+.left h2 {
+    margin-bottom: 1px;
+}
+
+.score-desc {
+    color: #d3c8ff;
+    width: 14em;
+    text-align: center;
+    margin: 0px 50px;
+    margin-bottom: 29px;
+    font-size: 14px;
+}
+
+.right {
+    margin:0;
+    padding-left: 1.85rem;
+    padding-top: 0.8rem;
+    border-radius: 0 10% 7% 0;
+}
+
+.container {
+    margin: 15px;
+    margin-left: 0;
+    margin-bottom: 0px;
+    padding: 5px 10px;
+    display: flex;
+    font-size: 15px;
+    border-radius: 8%;
+}
+
+#reaction {
+    color: hsl(0, 100%, 67%);
+    margin-right: 4rem;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+
+#memory {
+    color: hsl(39, 100%, 56%);
+    margin-right: 4.1rem;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+
+#verbal {
+    color: hsl(166, 100%, 37%);
+    margin-right: 5rem;
+    margin-left: 12px;
+    margin-top: 4px;
+}
+
+#visual {
+    color: hsl(234, 85%, 45%);
+    margin-right: 5rem;
+    margin-left: 12px;
+    margin-top: 4px;
+}
+
+.score {
+    margin-top: 4px;
+}
+
+button {
+    margin-top: 45px;
+    padding: 0.8rem 5.5rem;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 999em;
+    margin-right: 1.5rem;
+}
+
+button:hover{
+    background-image: linear-gradient(rgb(77, 34, 201), rgb(71, 52, 238));
+    cursor: pointer;
+}
+
+@media (max-width:375px) {
+    .card {
+        flex-direction: column;
+    }
+}
